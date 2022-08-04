@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         let mainLabel = UILabel()
         mainLabel.translatesAutoresizingMaskIntoConstraints = false
         mainLabel.text = "Santos"
-        mainLabel.font = UIFont.boldSystemFont(ofSize: 30)
+        mainLabel.font = UIFont.systemFont(ofSize: 30, weight: .regular)
         mainLabel.textAlignment = .center
         return mainLabel
     }()
@@ -64,9 +64,11 @@ class ViewController: UIViewController {
             temperatureLabel.rightAnchor.constraint(equalTo: view.rightAnchor)
         ]
         
+        
         NSLayoutConstraint.activate(iconViewConstraints)
         NSLayoutConstraint.activate(mainLabelConstraints)
         NSLayoutConstraint.activate(temperatureLabelConstraints)
+        
     }
 
 
